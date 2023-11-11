@@ -1,0 +1,14 @@
+.footer_content{
+    display: flex;
+    text-align: center;
+}
+.footer_content a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 10px;
+    font-size: 14px;
+}
+.mat-toolbar-single-row{
+    justify-content: center;
+}

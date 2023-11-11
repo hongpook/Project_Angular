@@ -1,0 +1,15 @@
+<div *ngFor="let post of posts">
+    <mat-card-title-group>
+        <mat-card-header>
+        <img src="{{ post.image}}" alt="">
+            
+        
+        </mat-card-header>
+        <mat-card-content>
+            <p>{{ post.title}}</p>
+            <p>{{ post.content}}</p>
+        </mat-card-content>
+    </mat-card-title-group>
+   
+
+</div>

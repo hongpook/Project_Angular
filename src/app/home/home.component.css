@@ -1,0 +1,20 @@
+.container{
+
+    padding:50px ;
+}
+.shoes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.shoes_items{
+    width: 33.333%;
+    
+}
+.shoes_items .content,
+.shoes_items img{
+    padding: 0 30px;
+    
+}
+
+ 

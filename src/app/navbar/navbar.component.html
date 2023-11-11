@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+    <img class="logo" src="assets/img/adidas-removebg-preview.png" alt="">
+    <div class="spacer"></div>
+    <a mat-button routerLink="home">Home</a>
+    <button mat-button [matMenuTriggerFor]="menu">
+        Category
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <a mat-button routerLink="men">Men</a>
+      </button>
+      <button mat-menu-item>
+        <a mat-button routerLink="women">Women</a>
+      </button>
+    </mat-menu>
+    <a mat-button routerLink="about">About</a>
+    <a mat-button routerLink="contact">Contact</a>
+</mat-toolbar>

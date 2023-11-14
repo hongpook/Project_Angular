@@ -9,12 +9,22 @@
 }
 .shoes_items{
     width: 33.333%;
-    
+    /* box-shadow: ; */
 }
 .shoes_items .content,
 .shoes_items img{
     padding: 0 30px;
     
 }
+.shoes_items img{
+    width: 443px;
+    height: 383px;
+}
+.space{
+    margin: 20px;
+    width: 100%;
+}
 
- 
+.slide img{
+    height: 750px;
+}

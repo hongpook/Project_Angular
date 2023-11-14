@@ -1,13 +1,35 @@
-<div class="container">
+<div class="space"></div>
+<owl-carousel-o [options]="Home" class="slide">
+  <ng-template carouselSlide>
+    <img src="assets/img/slide_1.png" alt="">
+  </ng-template>  
+  <ng-template carouselSlide>
+    <img src="assets/img/slide_2.png" alt="">
+
+  </ng-template>  
+  <ng-template carouselSlide>
+    <img src="assets/img/slide_3.png" alt="">
+
+  </ng-template>  
+</owl-carousel-o>
+<div class="container" >
     <div class="shoes">
-        <div class="shoes_items" >
+      <div class="shoes_items"  *ngFor="let post of posts">
+        <img src="{{ post.image }}" alt="">
+        <div class="content">
+            <h4>{{ post.title}}</h4>
+            <span>Giá bán: {{ post.price}} VND</span>
+            <p>{{ post.content }}</p>
+        </div>
+
+      </div>
+        <!-- <div class="shoes_items">
             <img src="assets/img/humanrace-samba.png" alt="">
             <div class="content">
                 <h4>Giày humanrace samba</h4>
                 <span>Giá bán: 2.330.000 VND</span>
                 <p>Giày adidas Samba có thiết kế cách tân mà vẫn đảm bảo phong cách. Phiên bản này tái hiện bề dày di sản thông qua thiết kế kinh điển. Từ đôi chân của các cầu thủ bóng đá tới sàn diễn thời trang high-fashion, ...</p>
             </div>
-            
         </div>
         <div class="shoes_items">
             <img src="assets/img/samba-decon.png" alt="">
@@ -25,6 +47,6 @@
                 <span>Giá bán: 2.330.000 VND</span>
                 <p>Giày adidas Samba có thiết kế cách tân mà vẫn đảm bảo phong cách. Phiên bản này tái hiện bề dày di sản thông qua thiết kế kinh điển. Từ đôi chân của các cầu thủ bóng đá tới sàn diễn thời trang high-fashion, ...</p>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
